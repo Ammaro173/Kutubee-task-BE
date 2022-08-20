@@ -20,7 +20,7 @@ var fs = require('fs');
 //. . .
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 const dbURI = process.env.MONGO_DB;
 
 // const corsOption = {
